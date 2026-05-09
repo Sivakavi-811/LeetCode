@@ -3,13 +3,12 @@ class Solution:
         score=0
         counter=0
         for i in events:
-            if counter>=10:
-                return[score,counter]
-            if i in {"1","NB","WD"}:
-                score+=1
-            elif i in {"2","3","4","6"}:
-                score+=int(i)
-            elif i == "W":
+            if counter == 10:
+                return [score,counter]
+            if i == "W":
                 counter+=1
+            elif i ==  "WD" or i == "NB":
+                score+=1
+            else:
+                score+=int(i)
         return [score,counter]
-        
