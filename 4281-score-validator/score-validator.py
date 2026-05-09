@@ -4,7 +4,7 @@ class Solution:
         counter=0
         for i in events:
             if counter == 10:
-                return [score,counter]
+                break
             if i == "W":
                 counter+=1
             elif i ==  "WD" or i == "NB":
