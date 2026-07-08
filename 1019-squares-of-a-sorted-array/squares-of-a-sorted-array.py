@@ -4,6 +4,6 @@ class Solution:
         nums.sort()
         l=[]
         for i in nums:
-            l.append(i**2)
+            l.append(i*i)
         return l
         
