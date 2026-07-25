@@ -13,6 +13,7 @@ class Solution {
             }
             n/=10;
         }
+        System.out.print(max1+" "+max2);
         return max1*max2;
     }
 }
