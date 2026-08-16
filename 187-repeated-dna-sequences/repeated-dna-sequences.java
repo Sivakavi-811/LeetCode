@@ -8,9 +8,7 @@ class Solution {
             if(seen.contains(chunk)){
                 repeated.add(chunk);
             }
-            else{
-                seen.add(chunk);
-            }
+            seen.add(chunk);
         }
         return new ArrayList<>(repeated);
         
