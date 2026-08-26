@@ -1,8 +1,13 @@
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
-        for a in range(int(sqrt(c))+1):
-            b=sqrt(c-a*a)
-            if b == int(b):
+        l = 0
+        r = int(c**0.5)
+        while l<=r:
+            curr = l*l + r*r
+            if c == curr:
                 return True
+            elif curr<c:
+                l+=1
+            else:
+                r-=1
         return False
-        
